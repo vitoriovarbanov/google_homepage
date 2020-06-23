@@ -1,23 +1,31 @@
-
-
-.navbar ul {
+/* GLOBAL */
+body{
+    width: 100%;
+}
+.container{
+    text-align: center;
+    
+    }
+/*NAVBAR*/   
+.container ul {
     list-style-type: none;
     margin: 0;
     padding: 1px 20px 5px 5px;
     text-align: right;
-      }
+    }
 
-.navbar li {
-    display: inline-block;  
+.container li {
+    display: inline-block; 
   }
   
-.navbar a {
+.container a {
     display: block;
     padding: 9px 5px 10px 10px;
     background-color: white;
     font-size: 12px;
     color: black;
-     }
+    text-decoration: none;
+    }
      
 #google_grid{
     height: 17px;
@@ -35,61 +43,31 @@
   border-radius: 3px;
 
 }
+.ggl_logo{
+    text-align: center;
+    margin-top: 8%;
+}
+#google_image{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
 
-#google_image {
-    left: 50%;
-    margin-top: -150px;
-    margin-left: -135px;
-    position: absolute;
-    top: 50%;
-}
-.google_search{
-display: flex;
-align-items: center;
-justify-content: center;
-}
-#searchbar {
-    position: relative;
-    bottom: -220px;
-}
 #search_form {
-    width: 583px;
-height: 46px;
-font-size: 16px;
-border: 1px solid rgb(218, 218, 218);
-border-radius: 24px;
-padding: 0 50px 0 50px;
+    display: inline-block;
+    width: 50%;
+    height: 50px;
+    font-size: 16px;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 24px;
     
 }
 #search_form:hover { 
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     border-color: rgba(223,225,229,0);
 }
-#magnifer {
-    left: 50%;
-    margin-top: -7px;
-    margin-left: -310px;
-    position: absolute;
-    top: 50%;
-    width: 20px;
-    height: 17px;
-    }
-
-
-
-.buttons{
-    left: 50%;
-    margin-top: 50px;
-    margin-left: -150px;
-    position: absolute;
-    top: 50%;  
-    }
 
 .button1{
-    border-radius: 4px;
-    background-color: #f2f2f2;
-    font-family: arial,sans-serif;
-    font-size: 14px;
     margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
@@ -99,6 +77,10 @@ padding: 0 50px 0 50px;
     cursor: pointer;
     user-select: none;
     border: 1px;
+    border-radius: 4px;
+    background-color: #f2f2f2;
+    font-family: arial,sans-serif;
+    font-size: 14px;
 
 }
 .button1:hover { 
@@ -167,4 +149,20 @@ padding: 0 50px 0 50px;
 
 #right:hover{
     text-decoration: underline;
+}
+
+/* adding queries to the page, to make it responsive*/
+@media screen and (max-width: 420px){
+    #google_image{
+        max-width: 50%;
+    }
+    #search_form{
+        height: 30px;
+    }
+    .button1{
+        font-size: 12px;
+    }
+    .button2{
+        font-size: 12px;
+    }
 }
